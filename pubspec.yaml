@@ -1,0 +1,61 @@
+name: greenway_commerce
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+# -------------- PACKAGES -------------- #
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UTILITIES PACKAGES
+
+  # ICONS
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.8
+
+  # STATE MANAGEMENT
+  get: ^4.6.6
+
+  # PRODUCT SPECIFIC PACKAGES
+# -------------- PACKAGES END -------------- #
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+# -------------- APPLICATION ASSETS -------------- #
+asseets:
+  - assets/logos/
+  - assets/icons/
+  - assets/images/
+
+# -------------- APPLICATION FONTS -------------- #
+fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.otf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.otf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.otf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.otf
+          weight: 800
+
