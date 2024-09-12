@@ -1,0 +1,1 @@
+ /Users/mac/Desktop/flutter_greenway_commerce/.dart_tool/flutter_build/6359401e103bf307408603950f4f3aea/native_assets.yaml: 
