@@ -51,11 +51,11 @@ class TSizes {
   static const double dividerHeight = 1.0;
 
   // Card Sizes
-  static const double cardSizeXS = 8.0;
+  static const double cardSizeXS = 6.0;
   static const double cardSizeSM = 10.0;
   static const double cardSizeMD = 14.0;
   static const double cardSizeLG = 16.0;
-  static const double cardSizeXL = 20.0;
+  static const double cardElevation = 2.0;
 
   // Input Field
   static const double inputFieldRadius = 12.0;
