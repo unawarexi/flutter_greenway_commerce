@@ -1,25 +1,26 @@
 import 'package:logger/logger.dart';
 
-class LoggerHelper {
+class TLoggerHelper {
   // Create a singleton instance of LoggerHelper
-  static final LoggerHelper _instance = LoggerHelper._internal();
+  static final TLoggerHelper _instance = TLoggerHelper._internal();
 
-  factory LoggerHelper() {
+  factory TLoggerHelper() {
     return _instance;
   }
 
-  LoggerHelper._internal();
+  TLoggerHelper._internal();
 
   // Logger instance with PrettyPrinter for structured logging
   final Logger _logger = Logger(
     printer: PrettyPrinter(
-      methodCount: 2, // Number of method calls to be displayed
-      errorMethodCount: 8, // Number of method calls if an error occurs
-      lineLength: 120, // Width of the output
-      colors: true, // Colorful log messages
-      printEmojis: true, // Include emojis in logs
-      printTime: true, // Include time in logs
-    ),
+        methodCount: 2, // Number of method calls to be displayed
+        errorMethodCount: 8, // Number of method calls if an error occurs
+        lineLength: 120, // Width of the output
+        colors: true, // Colorful log messages
+        printEmojis: true, // Include emojis in logs
+        dateTimeFormat:
+            DateTimeFormat.onlyTimeAndSinceStart // Include time in logs
+        ),
   );
 
   // Debug level logging
