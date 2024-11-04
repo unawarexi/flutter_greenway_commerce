@@ -1,7 +1,7 @@
 class TIamges {
   // -- App Logos
-  static const String darkAppLogo = "";
-  static const String lightAppLogo = "";
+  static const String darkAppLogo = "assets/images/logo.png";
+  static const String lightAppLogo = "assets/images/logo.png";
 
   // -- Social Logos
   static const String google = "";

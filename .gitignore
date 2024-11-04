@@ -1,0 +1,62 @@
+# Flutter related
+.build/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.metadata
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/Generated.xcconfig
+android/local.properties
+android/key.properties
+
+# IntelliJ related
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode related
+.vscode/
+
+# Packages
+.packages
+pubspec.lock
+
+# macOS
+*.DS_Store
+
+# Android
+build/
+
+# iOS
+Pods/
+Podfile.lock
+DerivedData/
+
+# Web
+web/.dart_tool/
+web/.packages
+web/build/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Web specific
+lib/generated_plugin_registrant.dart
+
+# Firebase
+ios/Runner/GoogleService-Info.plist
+android/app/google-services.json
+
+# Coverage
+coverage/
+
+# Other
+*.log
