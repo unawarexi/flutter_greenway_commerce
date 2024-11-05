@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:greenway_commerce/features/authentication/controllers/onboarding/onboarding_controllers.dart';
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onbaording_skip.dart';
+import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+
 import 'package:greenway_commerce/utils/constants/image_strings.dart';
+
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   OnBoardingScreen({super.key}); // Remove const, because of the controller
 
+  final controller = Get.put(OnboardingControllers());
+
   // Create the PageController
-  final PageController _pageController = PageController();
+  // final PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +25,8 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           // Use the same controller for the PageView
           PageView(
-            controller: _pageController,
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
                 image: TIamges.onBoardingImage1,
@@ -37,8 +45,9 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
-          const OnBoardingSkip(),
-          OnBoardingDotNavigation(pageController: _pageController),
+          OnBoardingSkip(),
+          OnBoardingDotNavigation(),
+          OnBoardingNextButton()
         ],
       ),
     );
