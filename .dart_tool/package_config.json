@@ -296,6 +296,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "smooth_page_indicator",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/smooth_page_indicator-1.2.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
@@ -434,7 +440,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-11-04T23:32:28.559677Z",
+  "generated": "2024-11-05T01:02:20.623942Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/mac/development/flutter",

@@ -1,7 +1,7 @@
 class TTexts {
   // Onboarding Titles
-  static const String onboardingTitle1 = 'Choose Your Product';
-  static const String onboardingTitle2 = 'Select Your Payment Method';
+  static const String onboardingTitle1 = 'Choose That Product';
+  static const String onboardingTitle2 = 'Select Payment Method';
   static const String onboardingTitle3 = 'Deliver Anywhere, Anytime';
 
   // Onboarding Subtitles

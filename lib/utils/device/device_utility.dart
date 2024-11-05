@@ -4,8 +4,8 @@ import 'package:get/get.dart'; // For accessing Get.context
 import 'dart:io'; // For checking platform // For checking internet connection
 import 'package:url_launcher/url_launcher_string.dart'; // For vibrating
 
-class DeviceUtility {
-  DeviceUtility._(); // Private constructor to prevent instantiation
+class TDeviceUtility {
+  TDeviceUtility._(); // Private constructor to prevent instantiation
 
   // Hide the keyboard
   static void hideKeyboard(BuildContext context) {
