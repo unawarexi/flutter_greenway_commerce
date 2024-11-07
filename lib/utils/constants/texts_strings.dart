@@ -51,6 +51,17 @@ class TTexts {
   static const String fullNameLabel = "Full Name";
   static const String phoneLabel = "Phone Number";
   static const String otpLabel = "One-Time Password (OTP)";
+  // General Form Fields
+  static const String firstNameLabel = "First Name";
+  static const String userNameLabel = "username";
+  static const String firstNamePlaceholder = "Enter your first name";
+  static const String lastNameLabel = "Last Name";
+  static const String lastNamePlaceholder = "Enter your last name";
+  static const String fullNamePlaceholder = "Enter your full name";
+  static const String phoneNumberLabel = "Phone Number";
+  static const String phoneNumberPlaceholder = "Enter your phone number";
+  static const String emailPlaceholder = "Enter your email address";
+  static const String confirmPasswordPlaceholder = "Re-enter your password";
 
   // Authentication - Button Texts
   static const String loginButton = "Log In";
@@ -63,14 +74,18 @@ class TTexts {
   static const String changePasswordButton = "Change Password";
   static const String skipButton = "Skip for Now";
   static const String continueButton = "Continue";
+  static const String cancelButton = "Cancel";
+  static const String backButton = "Back";
+  static const String updateButton = "Update";
+  static const String deleteAccountButton = "Delete Account";
+  static const String confirmDeleteAccountButton = "Confirm Account Deletion";
 
   // Agreement and Policies
   static const String termsAndConditions =
       "By signing up, you agree to our Terms & Conditions and Privacy Policy.";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfService = "Terms of Service";
-  static const String agreementText =
-      "I have read and agree to the Greenway Commerce Terms & Conditions.";
+  static const String agreementText = "I agree to the Greenway.";
 
   // Email Confirmations
   static const String emailConfirmationTitle = "Check Your Email";

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:greenway_commerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 
@@ -63,7 +65,7 @@ class TLoginFom extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const SignupScreen()),
                 child: const Text(TTexts.signUpButton),
               ),
             ),
