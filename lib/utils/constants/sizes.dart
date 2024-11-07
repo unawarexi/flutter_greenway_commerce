@@ -19,6 +19,22 @@ class TSizes {
   static const double iconSizeLG = 32.0;
   static const double iconSizeXL = 48.0;
 
+  // Image Sizes
+  static const double imageWidthXS = 200.0;
+  static const double imageHeightXS = 100.0;
+
+  static const double imageWidthSM = 576.0;
+  static const double imageHeightSM = 768.0;
+
+  static const double imageWidthMD = 768.0;
+  static const double imageHeightMD = 1024.0;
+
+  static const double imageWidthLG = 1024.0;
+  static const double imageHeightLG = 1366.0;
+
+  static const double imageWidthXL = 1280.0;
+  static const double imageHeightXL = 1600.0;
+
   // Font Sizes
   static const double fontSizeXS = 10.0;
   static const double fontSizeSM = 12.0;
@@ -79,7 +95,7 @@ class TSizes {
   // Additional Size Categories
   static const double sizeXS = 4.0;
   static const double sizeSM = 8.0;
-  static const double sizeMD = 16.0;
-  static const double sizeLG = 24.0;
-  static const double sizeXL = 32.0;
+  static const double sizeMD = 25.0;
+  static const double sizeLG = 40.0;
+  static const double sizeXL = 60.0;
 }

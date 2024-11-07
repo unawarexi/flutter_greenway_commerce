@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:greenway_commerce/features/authentication/screens/login/login_screen.dart';
 
 class OnboardingControllers extends GetxController {
   // Singleton instance getter
@@ -34,7 +35,7 @@ class OnboardingControllers extends GetxController {
       );
       updatePageIndicator(nextPage);
     } else {
-      // Get.to(LoginScreen())
+      Get.offAll(LoginScreen());
     }
   }
 

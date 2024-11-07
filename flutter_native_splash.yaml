@@ -1,19 +1,18 @@
 flutter_native_splash:
   color: "#ffffff"
   #background_image: "assets/background.png"
-  image: assets/images/logo.png
+  image: assets/logos/greenway_splash.png
   #branding: assets/dart.png
   #branding_mode: bottom
   # branding_bottom_padding: 24
   color_dark: "#272727"
   #background_image_dark: "assets/dark-background.png"
-  image_dark: assets/images/logo.png
+  image_dark: assets/logos/greenway_splash.png
   #branding_dark: assets/dart_dark.png
 
   
   android_12:
-    image: assets/images/logo.png
-
+    image: assets/logos/greenway_splash.png
     # Splash screen background color.
     color: "#ffffff"
 

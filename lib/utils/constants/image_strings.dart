@@ -1,11 +1,14 @@
 class TIamges {
   // -- App Logos
-  static const String darkAppLogo = "assets/images/logo.png";
-  static const String lightAppLogo = "assets/images/logo.png";
+  static const String darkAppLogo = "assets/logos/greenway_splash.png";
+  static const String lightAppLogo = "assets/logos/greenway_splash.png";
+
+  static const String logoVariant = "assets/logos/greenway1.png";
 
   // -- Social Logos
-  static const String google = "";
-  static const String facebook = "";
+  static const String google = "assets/icons/google_720255.png";
+  static const String facebook = "assets/icons/facebook_5968764.png";
+  static const String twitter = "assets/icons/twitter-alt-circle_12107562.png";
 
   // for onbaording screens
   static const String onBoardingImage1 =
