@@ -45,7 +45,7 @@ class BottomNavigationMenu extends StatelessWidget {
           ],
         ),
       ),
-      body: Container(),
+      body: controller.screens[controller.selectedIndex.value],
     );
   }
 }
@@ -56,6 +56,6 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex =
       0.obs; // Reactive variable to store the selected tab index.
 
-  final Screens =
+  final screens =
       []; // Placeholder list for screen widgets corresponding to each tab.
 }
