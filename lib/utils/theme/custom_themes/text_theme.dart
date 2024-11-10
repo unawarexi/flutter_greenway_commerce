@@ -56,7 +56,7 @@ class TTextTheme {
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: 12.0,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.bold,
       color: Colors.black,
     ),
     // labelSmall: const TextStyle().copyWith(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:greenway_commerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:greenway_commerce/features/authentication/screens/signup/widgets/terms_and_conditions.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
@@ -89,7 +91,8 @@ class TSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-                onPressed: () {}, child: const Text(TTexts.signUpButton)),
+                onPressed: () => Get.to(() => const VerifyEmailScreen()),
+                child: const Text(TTexts.signUpButton)),
           )
         ],
       ),

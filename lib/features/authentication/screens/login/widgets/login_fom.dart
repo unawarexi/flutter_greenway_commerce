@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:greenway_commerce/features/authentication/config/forgot_password.dart';
 import 'package:greenway_commerce/features/authentication/screens/signup/signup_screen.dart';
+import 'package:greenway_commerce/layouts/navigation_menu.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 
@@ -20,6 +22,7 @@ class TLoginFom extends StatelessWidget {
           crossAxisAlignment:
               CrossAxisAlignment.start, // Align fields to the left
           children: [
+            //---------------------------- FORM FIELDS
             TextFormField(
               decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.email_outlined),
@@ -36,6 +39,8 @@ class TLoginFom extends StatelessWidget {
               ),
             ),
             const SizedBox(height: TSizes.spaceBetweenInputFields / 2),
+
+            //------------------------ FORGOT PASSWORD AND CHECKBOX
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -46,22 +51,22 @@ class TLoginFom extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => const ForgotPassword()),
                   child: const Text(TTexts.forgotPasswordTitle),
                 ),
               ],
             ),
             const SizedBox(height: TSizes.spaceBetweenSections),
-            // Login Button
+            //------------------------ Login Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const BottomNavigationMenu()),
                 child: const Text(TTexts.loginButton),
               ),
             ),
             const SizedBox(height: TSizes.spaceBetweenItems),
-            // Sign Up Button
+            //------------------------ Sign Up Button
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
