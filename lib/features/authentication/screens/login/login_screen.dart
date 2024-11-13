@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:greenway_commerce/common/styles/spacing_styles.dart';
 import 'package:greenway_commerce/features/authentication/screens/login/widgets/login_fom.dart';
-import 'package:greenway_commerce/common/components/form_divider.dart';
+import 'package:greenway_commerce/common/components/shared/form_divider.dart';
 import 'package:greenway_commerce/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:greenway_commerce/common/components/social_buttons.dart';
+import 'package:greenway_commerce/common/components/shared/social_buttons.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 import 'package:greenway_commerce/utils/helpers/helper_functions.dart';

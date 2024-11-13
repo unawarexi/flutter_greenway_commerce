@@ -19,8 +19,8 @@ class TTexts {
       'We deliver to any location, making your experience seamless.';
 
   // Home
-  static const String homeAppBarTitle = 'Greenway Commerce';
-  static const String homeAppBarSubtitle = 'Sustainable Shopping, Andrew!';
+  static const String homeAppBarTitle = 'Sustainable Shopping,';
+  static const String homeAppBarSubtitle = 'Drop Cryptic!';
 
   // Authentication - Titles
   static const String loginTitle = "Log In to Explore";

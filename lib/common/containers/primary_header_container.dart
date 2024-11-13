@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greenway_commerce/common/containers/circular_container.dart';
-import 'package:greenway_commerce/common/components/custom_clip_path.dart';
+import 'package:greenway_commerce/common/components/custom_shapes/custom_clip_path.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 
 class TPrimaryHeaderContainer extends StatelessWidget {

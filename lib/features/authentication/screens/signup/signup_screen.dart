@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:greenway_commerce/common/components/form_divider.dart';
-import 'package:greenway_commerce/common/components/social_buttons.dart';
+import 'package:greenway_commerce/common/components/shared/form_divider.dart';
+import 'package:greenway_commerce/common/components/shared/social_buttons.dart';
 import 'package:greenway_commerce/features/authentication/screens/signup/widgets/sign_up_form.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
