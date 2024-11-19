@@ -95,7 +95,7 @@ class TSizes {
   // Additional Size Categories
   static const double sizeXS = 4.0;
   static const double sizeSM = 8.0;
-  static const double sizeMD = 25.0;
+  static const double sizeMD = 20.0;
   static const double sizeLG = 40.0;
   static const double sizeXL = 60.0;
 }
