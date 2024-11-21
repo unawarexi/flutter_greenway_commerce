@@ -58,4 +58,17 @@ class TIamges {
   static const String musicalInstruments = "dummy_icon_musical_instruments";
   static const String videoGames = "dummy_icon_video_games";
   static const String appliances = "dummy_icon_appliances";
+
+  // banner images
+  static const String promoBanner1 =
+      "assets/images/STR_Header-Blog-Post_Zara_V1.0-1.webp";
+  static const String promoBanner2 = "assets/images/1ef06-banner-hermes-1.jpg";
+  static const String promoBanner3 = "assets/images/maxresdefault.jpg";
+  static const String promoBanner4 =
+      "assets/images/starlink-199-canada-offer.jpeg";
+  static const String promoBanner5 = "assets/images/banner.png";
+  static const String promoBanner6 =
+      "assets/images/JBL-FLIP-6-10-1200x630.webp";
+  static const String promoBanner7 =
+      "assets/images/realistic-kitchenware-elements-set-with-colorful-cups-teapot-spoons-forks-saucepan-plates-napkin-holder-salt-pepper-shakers_1284-50839.avif";
 }

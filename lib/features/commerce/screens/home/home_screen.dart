@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:greenway_commerce/common/components/shared/slider_image_text.dart';
+import 'package:get/get.dart';
 import 'package:greenway_commerce/common/components/texts_components/section_heading.dart';
-
 import 'package:greenway_commerce/common/containers/primary_header_container.dart';
 import 'package:greenway_commerce/common/containers/search_container.dart';
+import 'package:greenway_commerce/features/commerce/controllers/home_carousel_indicator.dart';
 import 'package:greenway_commerce/features/commerce/screens/home/presentation/home_appbar.dart';
 import 'package:greenway_commerce/features/commerce/screens/home/presentation/home_categories.dart';
-import 'package:greenway_commerce/utils/constants/colors.dart';
-import 'package:greenway_commerce/utils/constants/image_strings.dart';
+import 'package:greenway_commerce/features/commerce/screens/home/presentation/carousel_slider.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
-import 'package:greenway_commerce/utils/device/device_utility.dart';
-import 'package:greenway_commerce/utils/helpers/helper_functions.dart';
-
-import 'package:iconsax/iconsax.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -64,7 +59,13 @@ class HomeScreen extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+
+            //=============== HOME BODY ===================== //
+            Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TCarouselSlider(),
+            ),
           ],
         ),
       ),

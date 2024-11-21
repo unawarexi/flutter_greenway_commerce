@@ -17,7 +17,7 @@ class THomeCategories extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return TSliderImageText(
-            image: TIamges.homeAndGarden,
+            image: TIamges.groceries,
             title: ' "items category"',
             onTap: () {},
           );
