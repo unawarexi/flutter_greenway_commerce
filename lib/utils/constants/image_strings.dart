@@ -71,4 +71,7 @@ class TIamges {
       "assets/images/JBL-FLIP-6-10-1200x630.webp";
   static const String promoBanner7 =
       "assets/images/realistic-kitchenware-elements-set-with-colorful-cups-teapot-spoons-forks-saucepan-plates-napkin-holder-salt-pepper-shakers_1284-50839.avif";
+
+  // card products images
+  static const String cardProduct1 = "assets/images/pair-trainers.jpg";
 }
