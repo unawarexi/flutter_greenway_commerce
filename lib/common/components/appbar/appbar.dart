@@ -39,7 +39,6 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize =>
       Size.fromHeight(TDeviceUtility.getAppBarHeight(AppBar()));
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:greenway_commerce/common/components/shared/brand_card.dart';
 import 'package:greenway_commerce/common/containers/Rounded_container.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
-import 'package:greenway_commerce/utils/constants/image_strings.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/helpers/helper_functions.dart';
 

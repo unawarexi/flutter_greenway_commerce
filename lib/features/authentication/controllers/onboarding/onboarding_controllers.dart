@@ -35,7 +35,7 @@ class OnboardingControllers extends GetxController {
       );
       updatePageIndicator(nextPage);
     } else {
-      Get.offAll(LoginScreen());
+      Get.offAll(const LoginScreen());
     }
   }
 

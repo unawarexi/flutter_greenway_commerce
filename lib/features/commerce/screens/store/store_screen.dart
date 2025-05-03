@@ -3,14 +3,11 @@ import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/appbar/tab_bar.dart';
 import 'package:greenway_commerce/common/components/shared/brand_card.dart';
 import 'package:greenway_commerce/common/components/shared/cart_counter_icon.dart';
-import 'package:greenway_commerce/common/components/shared/brand_show_case.dart';
 import 'package:greenway_commerce/common/components/texts_components/section_heading.dart';
-import 'package:greenway_commerce/common/containers/Rounded_container.dart';
 import 'package:greenway_commerce/common/containers/search_container.dart';
 import 'package:greenway_commerce/features/commerce/screens/store/presentation/category_tab.dart';
 import 'package:greenway_commerce/layouts/grid_layouts.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
-import 'package:greenway_commerce/utils/constants/image_strings.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:greenway_commerce/utils/helpers/helper_functions.dart';
 

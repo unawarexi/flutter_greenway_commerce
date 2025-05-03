@@ -7,11 +7,13 @@ class TCircularIcon extends StatelessWidget {
     required this.isDarkMode,
     this.color,
     this.icon,
+    this.onPressed, // Add onPressed parameter
   });
 
   final bool isDarkMode;
   final Color? color;
   final Widget? icon; // Change the type to Widget to accept any widget
+  final VoidCallback? onPressed; // Add onPressed field
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +25,8 @@ class TCircularIcon extends StatelessWidget {
             : TColors.light.withOpacity(0.9),
       ),
       child: IconButton(
-        onPressed: () {},
-        icon: icon ?? Icon(Icons.help, color: color), // Use the passed widget
+        onPressed: onPressed, // Use the passed onPressed
+        icon: icon ?? Icon(Icons.help, color: color),
       ),
     );
   }

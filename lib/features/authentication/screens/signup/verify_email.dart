@@ -20,7 +20,7 @@ class VerifyEmailScreen extends StatelessWidget {
           automaticallyImplyLeading: false,
           actions: [
             IconButton(
-                onPressed: () => Get.offAll(() => LoginScreen()),
+                onPressed: () => Get.offAll(() => const LoginScreen()),
                 icon: const Icon(CupertinoIcons.clear))
           ],
         ),
@@ -81,7 +81,7 @@ class VerifyEmailScreen extends StatelessWidget {
                             title: TTexts.accountCreatedSuccess,
                             subtitle: TTexts.contactSupport,
                             onPressed: () => Get.to(() =>
-                                LoginScreen()), // Ensure LoginScreen has the correct constructor
+                                const LoginScreen()), // Ensure LoginScreen has the correct constructor
                           ));
                     },
                     child: const Text(TTexts.continueButton),

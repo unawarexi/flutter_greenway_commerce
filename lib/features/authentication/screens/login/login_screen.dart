@@ -9,7 +9,7 @@ import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 import 'package:greenway_commerce/utils/helpers/helper_functions.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
