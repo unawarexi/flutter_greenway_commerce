@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/texts_components/section_heading.dart';
 import 'package:greenway_commerce/common/containers/primary_header_container.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/settings_menu_tile.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/user_profile_tile.dart';
+import 'package:greenway_commerce/features/personalization/screens/profile/profile.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 import 'package:iconsax/iconsax.dart';
@@ -27,7 +29,7 @@ class SettingsScreen extends StatelessWidget {
                             .headlineMedium!
                             .apply(color: TColors.white))),
                 const SizedBox(height: TSizes.spaceBetweenItems),
-                const TUserProfileTile(),
+                TUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
               ],
             )),
             Padding(

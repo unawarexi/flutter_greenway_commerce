@@ -8,7 +8,10 @@ import 'package:iconsax/iconsax.dart';
 class TUserProfileTile extends StatelessWidget {
   const TUserProfileTile({
     super.key,
+    required this.onPressed,
   });
+
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class TUserProfileTile extends StatelessWidget {
         leading: const TCircularImage(image: TIamges.darkAppLogo, width: 50, height: 50, padding: 0, ),
         title: Text("DR. Dre", style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white)),
         subtitle: Text("opensource.chukwuweike.dev@gmil.com", style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white)),
-        trailing: IconButton(icon: const Icon(Iconsax.edit), color: TColors.white, onPressed: (){},),
+        trailing: IconButton(icon: const Icon(Iconsax.edit), color: TColors.white, onPressed: onPressed,),
         onTap: () {
           // Handle account settings tap
         },
