@@ -6,9 +6,9 @@ class TIamges {
   static const String logoVariant = "assets/logos/greenway1.png";
 
   // -- Social Logos
-  static const String google = "assets/icons/google_720255.png";
-  static const String facebook = "assets/icons/facebook_5968764.png";
-  static const String twitter = "assets/icons/twitter-alt-circle_12107562.png";
+  static const String google = "assets/icons/google.png";
+  static const String facebook = "assets/icons/facebook.png";
+  static const String twitter = "assets/icons/twitter.png";
 
   // for onbaording screens
   static const String onBoardingImage1 =
