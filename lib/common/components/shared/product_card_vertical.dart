@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:greenway_commerce/common/components/custom_shapes/rounded_image.dart';
 import 'package:greenway_commerce/common/components/shared/brand_verified_badge.dart';
 import 'package:greenway_commerce/common/components/shared/circular_icon.dart';
 import 'package:greenway_commerce/common/components/texts_components/product_title_text.dart';
 import 'package:greenway_commerce/common/containers/Rounded_container.dart';
 import 'package:greenway_commerce/common/styles/shadows.dart';
+import 'package:greenway_commerce/features/commerce/screens/product_details/product_detail.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 import 'package:greenway_commerce/utils/constants/image_strings.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
@@ -18,7 +20,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDarkMode = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetail()),
       child: Container(
         width: 200,
         // padding:
