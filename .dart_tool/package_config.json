@@ -302,6 +302,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "readmore",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/readmore-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/mac/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",

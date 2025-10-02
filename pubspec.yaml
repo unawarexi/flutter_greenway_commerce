@@ -21,6 +21,7 @@ dependencies:
   flutter_native_splash: ^2.4.2
   smooth_page_indicator: ^1.2.0+3
   carousel_slider: ^5.0.0
+  readmore: ^3.0.0
 
   # ICONS
   iconsax: ^0.0.8
