@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/custom_shapes/rounded_image.dart';
@@ -10,6 +11,7 @@ import 'package:greenway_commerce/features/commerce/screens/product_details/widg
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/product_image_slider.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/product_meta_data.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/rating_share_widget.dart';
+import 'package:greenway_commerce/features/commerce/screens/product_reviews/product_reviews.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 import 'package:greenway_commerce/utils/constants/image_strings.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
@@ -93,7 +95,7 @@ class _ProductDetailState extends State<ProductDetail> {
 
                 const Divider(),
                 const SizedBox( height: TSizes.spaceBetweenItems,),
-                TSectionHeading(title: "Reviews", showActionsButton: false, onPressed: (){},),
+                TSectionHeading(title: "Reviews", showActionsButton: true, onPressed: () => Get.to(() => const ProductReviewsScreen()) ,),
                 const SizedBox(height: TSizes.spaceBetweenSections,)
               ],
             )),

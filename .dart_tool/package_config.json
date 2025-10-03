@@ -122,6 +122,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_rating_bar",
+      "rootUri": "file:///Users/mac/.pub-cache/hosted/pub.dev/flutter_rating_bar-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/mac/development/flutter/packages/flutter_test",
       "packageUri": "lib/",

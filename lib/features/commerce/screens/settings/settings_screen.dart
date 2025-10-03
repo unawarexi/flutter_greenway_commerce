@@ -5,6 +5,7 @@ import 'package:greenway_commerce/common/components/texts_components/section_hea
 import 'package:greenway_commerce/common/containers/primary_header_container.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/settings_menu_tile.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/user_profile_tile.dart';
+import 'package:greenway_commerce/features/personalization/screens/address/address.dart';
 import 'package:greenway_commerce/features/personalization/screens/profile/profile.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
@@ -45,9 +46,7 @@ class SettingsScreen extends StatelessWidget {
                       icon: Iconsax.safe_home,
                       title: "My Addresses",
                       subtitle: "Set your default shipping address",
-                      onTap: () {
-                        // Handle addresses tap
-                      },
+                      onTap: () => Get.to (() => const AddressScreen())
                     ),
                     TSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
