@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:greenway_commerce/common/components/custom_shapes/tcircular_image.dart';
 import 'package:greenway_commerce/common/components/shared/brand_verified_badge.dart';
-import 'package:greenway_commerce/common/components/texts_components/brand_title_text.dart';
 import 'package:greenway_commerce/common/components/texts_components/product_title_text.dart';
 import 'package:greenway_commerce/common/containers/Rounded_container.dart';
 import 'package:greenway_commerce/common/components/texts_components/product_price_text.dart';

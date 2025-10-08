@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:greenway_commerce/common/components/appbar/appbar.dart';
-import 'package:greenway_commerce/common/components/custom_shapes/rounded_image.dart';
-import 'package:greenway_commerce/common/components/shared/circular_icon.dart';
-import 'package:greenway_commerce/common/components/shared/curved_edges_widgets.dart';
 import 'package:greenway_commerce/common/components/texts_components/section_heading.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/product_attributes.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/product_cart_widget.dart';
@@ -13,10 +8,7 @@ import 'package:greenway_commerce/features/commerce/screens/product_details/widg
 import 'package:greenway_commerce/features/commerce/screens/product_details/widgets/rating_share_widget.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_reviews/product_reviews.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
-import 'package:greenway_commerce/utils/constants/image_strings.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
-import 'package:greenway_commerce/utils/helpers/helper_functions.dart';
-import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 class ProductDetail extends StatefulWidget {

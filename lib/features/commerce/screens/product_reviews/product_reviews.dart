@@ -2,13 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/products/rating_bar_indicator.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_reviews/widgets/overall_product_rating.dart';
-import 'package:greenway_commerce/common/components/products/rating_progress_indicator.dart';
 import 'package:greenway_commerce/features/commerce/screens/product_reviews/widgets/user_review_card.dart';
 import 'package:greenway_commerce/utils/constants/colors.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:greenway_commerce/utils/device/device_utility.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProductReviewsScreen extends StatefulWidget {
   const ProductReviewsScreen({super.key});
