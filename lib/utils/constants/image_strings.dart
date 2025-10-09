@@ -74,4 +74,20 @@ class TIamges {
 
   // card products images
   static const String cardProduct1 = "assets/images/pair-trainers.jpg";
+
+
+  // Payment method images
+  static const String applePay = "assets/images/Apple-pay.svg";
+  static const String googlePay = "assets/images/Google-pay.svg";
+  static const String creditCard = "assets/images/chase.svg";
+  static const String masterCard = "assets/images/Mastercard.svg";
+  static const String payPal = "assets/images/PayPal-Logo.svg";
+  static const String visa = "assets/images/Visa.svg";
+  static const String aliPay = "assets/images/Alipay.svg";
+  static const String paystack = "assets/images/paystack.svg";
+  static const String flutterwave = "assets/images/flutterwave.svg";
+  static const String zelle = "assets/images/Zelle.svg";
+  static const String payment = "assets/images/Payment.gif";
+
+
 }

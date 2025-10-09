@@ -12,11 +12,12 @@ class SuccessScreen extends StatelessWidget {
       required this.image,
       required this.title,
       required this.subtitle,
-      required this.onPressed});
+      required this.onPressed, this.imageSize});
 
   // -------- constants params
   final String image, title, subtitle;
   final VoidCallback onPressed;
+  final double? imageSize;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +28,10 @@ class SuccessScreen extends StatelessWidget {
           children: [
             //-------- Verify image
             Image(
+             width: imageSize,
+             height: imageSize,
               image: AssetImage(image),
-              width: THelperFunctions.screenWidth(context) * 0.6,
+              // width: THelperFunctions.screenWidth(context) * 0.6,
             ),
 
             const SizedBox(
