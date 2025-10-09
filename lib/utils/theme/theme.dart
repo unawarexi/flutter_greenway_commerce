@@ -32,7 +32,7 @@ class TAppTheme {
       fontFamily: "Poppins",
       brightness: Brightness.dark,
       primaryColor: Colors.blue,
-      scaffoldBackgroundColor: Colors.black,
+      scaffoldBackgroundColor: const Color(0xFF041511),
       textTheme: TTextTheme.darkTextTheme,
       chipTheme: TChipTheme.darkChipTheme,
       appBarTheme: TAppBarTheme.darkAppBarTheme,

@@ -28,10 +28,9 @@ class SuccessScreen extends StatelessWidget {
           children: [
             //-------- Verify image
             Image(
-             width: imageSize,
-             height: imageSize,
+            
               image: AssetImage(image),
-              // width: THelperFunctions.screenWidth(context) * 0.6,
+              width: THelperFunctions.screenWidth(context) * 0.6,
             ),
 
             const SizedBox(

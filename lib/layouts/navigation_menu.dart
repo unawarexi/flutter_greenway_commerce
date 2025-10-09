@@ -32,9 +32,9 @@ class BottomNavigationMenu extends StatelessWidget {
           elevation: 0,
           onDestinationSelected: (index) => controller.selectedIndex.value =
               index, // Updates the selected tab index when a tab is clicked.
-          backgroundColor: darkMode ? TColors.black : Colors.white,
+          backgroundColor: darkMode ? TColors.dark : Colors.white,
           indicatorColor: darkMode
-              ? TColors.light.withOpacity(0.1)
+              ? TColors.accent.withOpacity(0.5)
               : TColors.black.withOpacity(0.1),
 
           //---------------------- ICONS AND LABEL

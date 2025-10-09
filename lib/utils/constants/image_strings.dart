@@ -17,6 +17,8 @@ class TIamges {
       "assets/onboarding_images/Worker-packing-the-goods.gif";
   static const String onBoardingImage3 =
       "assets/onboarding_images/Online-Delivery-Service.gif";
+  static const String onBoardingBackgroundImage = "assets/images/grass.png";
+  static const String onBoardingTopLeftImage = "assets/images/topOnboarding.png";
 
   // -- products illustration
   static const String productIllustration = "assets/images/products.png";
@@ -75,7 +77,6 @@ class TIamges {
   // card products images
   static const String cardProduct1 = "assets/images/pair-trainers.jpg";
 
-
   // Payment method images
   static const String applePay = "assets/images/Apple-pay.svg";
   static const String googlePay = "assets/images/Google-pay.svg";
@@ -88,6 +89,4 @@ class TIamges {
   static const String flutterwave = "assets/images/flutterwave.svg";
   static const String zelle = "assets/images/Zelle.svg";
   static const String payment = "assets/images/Payment.gif";
-
-
 }

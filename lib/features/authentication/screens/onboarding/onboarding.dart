@@ -5,25 +5,32 @@ import 'package:greenway_commerce/features/authentication/screens/onboarding/wid
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onbaording_skip.dart';
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:greenway_commerce/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-
 import 'package:greenway_commerce/utils/constants/image_strings.dart';
-
 import 'package:greenway_commerce/utils/constants/texts_strings.dart';
 
 class OnBoardingScreen extends StatelessWidget {
-  OnBoardingScreen({super.key}); // Remove const, because of the controller
+  OnBoardingScreen({super.key});
 
   final controller = Get.put(OnboardingControllers());
-
-  // Create the PageController
-  // final PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          // Use the same controller for the PageView
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: MediaQuery.of(context).size.height * 0.5,
+            child: Image.asset(
+              TIamges.onBoardingBackgroundImage,
+              fit: BoxFit.cover,
+              width: double.infinity,
+            ),
+          ),
+
+          // PageView with onboarding content
           PageView(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
@@ -45,6 +52,21 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
+
+          // Top left corner image
+          Positioned(
+            top: 0,
+            left: 0,
+            child: Image.asset(
+              TIamges.onBoardingTopLeftImage,
+              width: MediaQuery.of(context).size.width * 0.6,
+              height: MediaQuery.of(context).size.height * 0.4,
+              fit: BoxFit.contain,
+              alignment: Alignment.topLeft,
+            ),
+          ),
+
+          // Overlay widgets
           OnBoardingSkip(),
           OnBoardingDotNavigation(),
           OnBoardingNextButton()

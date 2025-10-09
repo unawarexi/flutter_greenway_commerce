@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/texts_components/section_heading.dart';
 import 'package:greenway_commerce/common/containers/primary_header_container.dart';
+import 'package:greenway_commerce/features/commerce/screens/order/order.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/settings_menu_tile.dart';
 import 'package:greenway_commerce/features/commerce/screens/settings/presentation/user_profile_tile.dart';
 import 'package:greenway_commerce/features/personalization/screens/address/address.dart';
@@ -30,7 +31,8 @@ class SettingsScreen extends StatelessWidget {
                             .headlineMedium!
                             .apply(color: TColors.white))),
                 const SizedBox(height: TSizes.spaceBetweenItems),
-                TUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
+                TUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen())),
               ],
             )),
             Padding(
@@ -43,11 +45,10 @@ class SettingsScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: TSizes.spaceBetweenItems),
                     TSettingsMenuTile(
-                      icon: Iconsax.safe_home,
-                      title: "My Addresses",
-                      subtitle: "Set your default shipping address",
-                      onTap: () => Get.to (() => const AddressScreen())
-                    ),
+                        icon: Iconsax.safe_home,
+                        title: "My Addresses",
+                        subtitle: "Set your default shipping address",
+                        onTap: () => Get.to(() => const AddressScreen())),
                     TSettingsMenuTile(
                       icon: Iconsax.shopping_cart,
                       title: "My Cart",
@@ -61,7 +62,7 @@ class SettingsScreen extends StatelessWidget {
                       title: "My Orders",
                       subtitle: "View your order history",
                       onTap: () {
-                        // Handle orders tap
+                        Get.to(() => const OrderScreeen());
                       },
                     ),
                     TSettingsMenuTile(
@@ -136,7 +137,7 @@ class SettingsScreen extends StatelessWidget {
                       icon: Iconsax.image,
                       title: "HD Image Quality",
                       subtitle: "Toggle high-definition images",
-                     trailing: Switch(
+                      trailing: Switch(
                         value: false,
                         onChanged: (value) {
                           // Handle geolocation switch
