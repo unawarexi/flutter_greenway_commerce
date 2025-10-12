@@ -69,7 +69,7 @@ class UserReviewCard extends StatelessWidget {
         TRoundedContainer(
           backgroundColor: dark ? TColors.darkGrey : TColors.grey,
           child: Padding(
-            padding: EdgeInsets.all(TSizes.paddingMD),
+            padding: const EdgeInsets.all(TSizes.paddingMD),
             child: Column(
               children: [
                 Row(

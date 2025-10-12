@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:greenway_commerce/common/components/appbar/appbar.dart';
 import 'package:greenway_commerce/common/components/custom_shapes/rounded_image.dart';
 import 'package:greenway_commerce/common/components/shared/product_card_horizontal.dart';
