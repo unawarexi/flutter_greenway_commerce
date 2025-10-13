@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "package:get/get.dart";
 import "package:greenway_commerce/features/authentication/screens/onboarding/onboarding.dart";
+import "package:greenway_commerce/utils/constants/colors.dart";
 import "package:greenway_commerce/utils/theme/theme.dart";
 
 class App extends StatelessWidget {
@@ -9,10 +10,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
-      darkTheme: TAppTheme.darkTheme,
-      home: OnBoardingScreen(),
-    );
+        debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.system,
+        theme: TAppTheme.lightTheme,
+        darkTheme: TAppTheme.darkTheme,
+        home: const Scaffold(
+            backgroundColor: TColors.primary,
+            body: Center(
+                child: CircularProgressIndicator(color: TColors.accent))));
   }
 }

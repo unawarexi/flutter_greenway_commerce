@@ -7,19 +7,26 @@ class TTermsAndConditions extends StatelessWidget {
   const TTermsAndConditions({
     super.key,
     required this.dark,
+    required this.value,
+    required this.onChanged,
   });
 
   final bool dark;
+  final bool value;
+  final ValueChanged<bool?> onChanged;
 
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start, // Align checkbox and text
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           width: 24,
           height: 24,
-          child: Checkbox(value: true, onChanged: (value) {}),
+          child: Checkbox(
+            value: value,
+            onChanged: onChanged,
+          ),
         ),
         const SizedBox(width: TSizes.spaceBetweenItems),
         Flexible(

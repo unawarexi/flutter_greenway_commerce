@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:greenway_commerce/features/authentication/screens/login/login_screen.dart';
 
 class OnboardingControllers extends GetxController {
@@ -25,9 +26,11 @@ class OnboardingControllers extends GetxController {
 
   // Navigate to the next page and loginScreen
   void nextPage() {
+
     int nextPage = currentPageIndex.value + 1;
     if (nextPage < 3) {
       // Assuming there are 3 pages, adjust as needed
+
       pageController.animateToPage(
         nextPage,
         duration: const Duration(milliseconds: 300),
@@ -35,6 +38,8 @@ class OnboardingControllers extends GetxController {
       );
       updatePageIndicator(nextPage);
     } else {
+      final storage = GetStorage();
+      storage.write("isLoggedIn", false);
       Get.offAll(const LoginScreen());
     }
   }
@@ -46,6 +51,7 @@ class OnboardingControllers extends GetxController {
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOut,
     );
-    updatePageIndicator(2); // Update to the last page index
+    Get.offAll(const LoginScreen());
+    // updatePageIndicator(2); // Update to the last page index
   }
 }

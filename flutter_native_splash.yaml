@@ -1,22 +1,22 @@
 flutter_native_splash:
   # Light mode configuration - matching onboarding green theme
   color: "#F9FBE7"  # Very light green background (from onboarding)
-  image: assets/images/splash.png
+  image: assets/logos/splash.png
   
   # Dark mode configuration - matching onboarding dark green theme
-  color_dark: "#07120E"  # Dark green background (from onboarding)
-  image_dark: assets/images/splash.png
+  color_dark: "#041511"  # Dark green background (from onboarding)
+  image_dark: assets/logos/splash.png
   
   # Android 12+ specific settings with gradient-inspired colors
   android_12:
     # Light mode Android 12
-    image: assets/images/logo2.png
+    image: assets/logos/splash.png
     color: "#F9FBE7"  # Light green background
     # icon_background_color: "#E8F5E8"  # Light mint (from gradient)
     
     # Dark mode Android 12
-    image_dark: assets/images/logo2.png
-    color_dark: "#07120E"  # Dark green background
+    image_dark: assets/logos/splash.png
+    color_dark: "#041511"  # Dark green background
     # icon_background_color_dark: "#2D5016"  # Very dark green (from gradient)
   
   # Platform support

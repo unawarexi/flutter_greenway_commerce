@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greenway_commerce/utils/constants/colors.dart';
-import 'package:greenway_commerce/utils/constants/image_strings.dart';
+import 'package:sign_button/sign_button.dart';
 import 'package:greenway_commerce/utils/constants/sizes.dart';
 
 class TSocialButtons extends StatelessWidget {
@@ -16,51 +15,25 @@ class TSocialButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: TColors.grey,
-              ),
-              borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-              onPressed: () {},
-              icon: const Image(
-                  width: TSizes.iconSizeMD,
-                  height: TSizes.iconSizeMD,
-                  image: AssetImage(TIamges.google))),
+        SignInButton.mini(
+          buttonType: ButtonType.google,
+          onPressed: () {
+            // TODO: Implement Google sign in
+          },
         ),
-        const SizedBox(
-          width: TSizes.spaceBetweenItems,
+        const SizedBox(width: TSizes.spaceBetweenItems),
+        SignInButton.mini(
+          buttonType: ButtonType.facebook,
+          onPressed: () {
+            // TODO: Implement Facebook sign in
+          },
         ),
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: TColors.grey,
-              ),
-              borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-              onPressed: () {},
-              icon: const Image(
-                  width: TSizes.iconSizeMD,
-                  height: TSizes.iconSizeMD,
-                  image: AssetImage(TIamges.facebook))),
-        ),
-        const SizedBox(
-          width: TSizes.spaceBetweenItems,
-        ),
-        Container(
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: TColors.grey,
-              ),
-              borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-              onPressed: () {},
-              icon: Image(
-                  color: dark ? TColors.light : null,
-                  width: TSizes.iconSizeMD,
-                  height: TSizes.iconSizeMD,
-                  image: const AssetImage(TIamges.twitter))),
+        const SizedBox(width: TSizes.spaceBetweenItems),
+        SignInButton.mini(
+          buttonType: ButtonType.twitter,
+          onPressed: () {
+            // TODO: Implement Twitter sign in
+          },
         ),
       ],
     );
